@@ -2,14 +2,69 @@
 <html>
 <head>
     <title>GameHub</title>
-</head>
-<body>
-    <h1>Welcome to GameHub 🎮</h1>
-    <p>This is my first website.</p>
 
-    <button onclick="alert('Game Started!')">Start Game</button>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e1e2f, #3a3a5f);
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        button {
+            background-color: #ff4757;
+            border: none;
+            padding: 12px 20px;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff6b81;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #70a1ff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    🎮 GameHub
+</header>
+
+<div class="container">
+    <h1>Welcome to GameHub</h1>
+    <p>Your place for awesome games</p>
+
+    <button onclick="alert('Game starting soon!')">Start Game</button>
 
     <br><br>
-    <a href="page2.html">Go to Page 2</a>
+    <a href="page2.html">Go to Page 2 →</a>
+</div>
+
 </body>
 </html>
