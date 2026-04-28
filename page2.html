@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page 2</title>
+    <title>More Games</title>
 
     <style>
         body {
+            margin: 0;
             font-family: Arial;
-            background-color: #2f3542;
+            background: #1e272e;
             color: white;
             text-align: center;
         }
 
+        header {
+            padding: 20px;
+            font-size: 26px;
+            background: #111;
+        }
+
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .card {
+            background: #2f3640;
+            padding: 15px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background: #3d3d5c;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background: #00a8ff;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
         a {
-            color: #1e90ff;
-            font-size: 18px;
+            display: block;
+            margin: 20px;
+            color: #70a1ff;
         }
     </style>
 </head>
 
 <body>
 
-<h1>More Games Coming Soon 🚀</h1>
-<p>Stay tuned for updates!</p>
+<header>🔥 Game Store</header>
+
+<h2>Choose Your Game</h2>
+
+<div class="games">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e">
+        <h3>FPS Shooter</h3>
+        <button>Purchase</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420">
+        <h3>Racing Pro</h3>
+        <button>Purchase</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1">
+        <h3>Open World</h3>
+        <button>Purchase</button>
+    </div>
+</div>
 
 <a href="index.html">← Back to Home</a>
 
