@@ -10,20 +10,9 @@
             color: white;
             text-align: center;
             overflow-x: hidden;
-        }
 
-        /* Background slider */
-        body {
-            animation: slideBg 15s infinite;
-            background-size: cover;
-            background-position: center;
-        }
-
-        @keyframes slideBg {
-            0% { background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e'); }
-            33% { background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420'); }
-            66% { background-image: url('https://images.unsplash.com/photo-1493711662062-fa541adb3fc8'); }
-            100% { background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e'); }
+            /* FIXED background (no lag) */
+            background: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200') no-repeat center center/cover;
         }
 
         .overlay {
@@ -119,19 +108,19 @@
 <!-- Game Store Section -->
 <div class="games">
     <div class="card">
-        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1">
+        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1?w=600" loading="lazy">
         <h3>Action Game</h3>
         <button>Buy Now</button>
     </div>
 
     <div class="card">
-        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420">
+        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600" loading="lazy">
         <h3>Racing Game</h3>
         <button>Buy Now</button>
     </div>
 
     <div class="card">
-        <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8">
+        <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600" loading="lazy">
         <h3>Adventure Game</h3>
         <button>Buy Now</button>
     </div>
